@@ -3,11 +3,11 @@
 - In the Task, I was asked to create a smart contract in which a person can deposit the ETH token and can create a NFT, and then later he can also sell his NFT back and    get the token back.
 - So there are two function in the smart contract one for minting and another for withdrawing the ETH token.
 
+In the code there is a idToAmount variable which just simpy stores the amount contributed by the minter on each token id.
+1) There is  a baseURI function which is helping to generate the link for storing metadata of NFT.
+2) when someone mints the NFT, he enters the address which will be the owner of the NFT and the minter has to deposit a minimum amount of 0.01 ether. And for each NFT a unique token id is generated.
+3) And when the owner withdraws fund for his NFT, we firstly check if he is the true owner of the given tokenId and then we transfer the ownership of the NFT to the manager of the smart contract. And after that amount deposited by the minter is transferred to the owner of the NFT and the idToAmount variable mapping is reset to 0.
 
-In the code there is a idToAmount value which just simpy stores the amount contributed by the minter on each token id.
-- There is  a baseURI function which is helping to generate the link for storing metadata of NFT.
-- when someone mints the NFT, he enters the address which will be the owner of the NFT has to deposit a minimum amount of 0.01 ether.So for each NFT a unique token id      is generated.
-- And when the owner withdraws fund for his NFT, we firstly check if she is the true owner of the given tokenid and then we transfer the ownership of the NFT to        address of the smart contract manager. And after that amount deposited by the minter is transferred to the owner and the idToAmount mapping is reset to 0.
  
  
 Test cases
