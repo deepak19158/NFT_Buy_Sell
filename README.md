@@ -5,9 +5,9 @@
 
 
 In the code there is a idToAmount value which just simpy stores the amount contributed by the minter on each token id.
- 1.) There is  a baseURI function which is helping to generate the link for storing metadata of NFT.
- 2.) when someone mints the NFT, he enters the address which will be the owner of the NFT has to deposit a minimum amount of 0.01 ether.So for each NFT a unique token id      is generated.
- 3.) And when the owner withdraws fund for his NFT, we firstly check if she is the true owner of the given tokenid and then we transfer the ownership of the NFT to        address of the smart contract manager. And after that amount deposited by the minter is transferred to the owner and the idToAmount mapping is reset to 0.
+- There is  a baseURI function which is helping to generate the link for storing metadata of NFT.
+- when someone mints the NFT, he enters the address which will be the owner of the NFT has to deposit a minimum amount of 0.01 ether.So for each NFT a unique token id      is generated.
+- And when the owner withdraws fund for his NFT, we firstly check if she is the true owner of the given tokenid and then we transfer the ownership of the NFT to        address of the smart contract manager. And after that amount deposited by the minter is transferred to the owner and the idToAmount mapping is reset to 0.
  
  
 Test cases
